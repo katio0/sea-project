@@ -58,6 +58,7 @@ def print_table(seas):
         return
     name_width = max(len("Название моря"), *(len(sea.name) for sea in seas))
     table_header = f"{'Название моря':<{name_width}} | {'Глубина, м':>12} | {'Солёность, ‰':>12}"
+    print(f"\nКоличество морей: {len(seas)}")
     print(table_header)
     print("-" * len(table_header))
     for sea in seas:
@@ -66,7 +67,7 @@ def print_table(seas):
 
 def run_menu(seas):
     while True:
-        print("\n1. Показать все моря")
+        print("\n1. Показать таблицу морей")
         print("2. Сортировать моря по глубине")
         print("0. Выход")
         menu_choice = input("Выберите пункт меню: ").strip()
