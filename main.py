@@ -67,7 +67,8 @@ def print_table(seas):
 
 def run_menu(seas):
     while True:
-        print("\n1. Показать таблицу морей")
+        print("\nМеню программы «Моря»")
+        print("1. Показать таблицу морей")
         print("2. Сортировать моря по глубине")
         print("0. Выход")
         menu_choice = input("Выберите пункт меню: ").strip()
